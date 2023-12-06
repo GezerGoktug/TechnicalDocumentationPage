@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: #fafafa;
+  font-family: "Gabarito", sans-serif;
+  height: 100vh;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+/* *MAİN */
+.main {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.main-doc header,
+.main-section header {
+  font-size: 16px;
+}
+.main section {
+  margin-left: 20px;
+}
+.main section header {
+  font-size: 30px;
+}
+section code {
+  background-color: gray;
+  width: auto;
+  height: 100px;
+  display: block;
+}
+#Colors div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+#Colors :nth-child(3) {
+  background-color: red;
+}
+#Colors :nth-child(4) {
+  background-color: blue;
+}
+#Colors :nth-child(5) {
+  background-color: yellow;
+}
+#Colors :nth-child(6) {
+  background-color: green;
+}
+#Colors:nth-child(7) {
+  background-color: gray;
+}
+/* *MAİN */
+/* *ASİDE */
+nav {
+  border-right: 2px grey solid;
+}
+nav .side-bar {
+  overflow-y: scroll;
+  max-height: calc(100vh - 69px);
+}
+.aside-header h1 {
+  text-align: center;
+  padding: 20px auto 20px;
+}
+nav a {
+  color: gray;
+  display: block;
+  padding: 35px 40px;
+  text-align: center;
+  border-top: 1px grey solid;
+}
+
+/* *ASİDE */
+/** RESPONSİVE */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+  .main section header {
+    font-size: 26px;
+  }
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+  .main section header {
+    font-size: 23px;
+  }
+  nav a {
+    padding: 20px 25px;
+  }
+  nav {
+    border-right: none;
+    border-bottom: 1px grey solid;
+  }
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+  .main section header {
+    font-size: 20px;
+  }
+  nav a {
+    padding: 25px 30px;
+  }
+  nav {
+    border-right: none;
+    border-bottom: 1px grey solid;
+  }
+}
+
+/** RESPONSİVE */
